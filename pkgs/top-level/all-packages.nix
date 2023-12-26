@@ -22219,8 +22219,6 @@ with pkgs;
 
   ip2location-c = callPackage ../development/libraries/ip2location-c { };
 
-  iir1 = callPackage ../development/libraries/iir1 { };
-
   irrlicht = if !stdenv.isDarwin then
     callPackage ../development/libraries/irrlicht { }
   else callPackage ../development/libraries/irrlicht/mac.nix {
